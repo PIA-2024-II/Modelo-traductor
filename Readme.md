@@ -24,5 +24,16 @@ Preparación de los datos:
 
     Se dividen los datos en conjuntos de entrenamiento y validación.
     Se utiliza DataLoader de PyTorch para gestionar los datos durante el entrenamiento.
+    
+Definición del modelo:
 
+    El modelo utilizado es T5ForConditionalGeneration de Hugging Face, especializado en tareas de generación de secuencias.
+
+Entrenamiento del modelo:
+
+    Se configuran las hiperparámetros de entrenamiento, como el optimizador (AdamW) y la tasa de aprendizaje. También se define el número de épocas y se realiza el ajuste del scheduler.
+
+Evaluación del modelo:
+
+    Después del entrenamiento, se utiliza accuracy_score para evaluar la precisión del modelo en el conjunto de validación.
 
